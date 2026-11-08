@@ -1,9 +1,4 @@
-let contatore = 0;
-
-const numero = document.getElementById("numero");
-const bottone = document.getElementById("bottone");
-
-bottone.addEventListener("click", function () {
-  contatore++;
-  numero.textContent = contatore;
-});
+function cambiaColore() {
+  const colori = ["lightblue", "lightgreen", "pink", "khaki"];
+  document.body.style.background = colori[Math.floor(Math.random() * colori.length)];
+}
